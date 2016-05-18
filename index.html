@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bing Speech API Test</title>
+    <!-- Skeleton styles -->
+    <link rel="stylesheet" href="./node_modules/skeleton-css/css/normalize.css">
+    <link rel="stylesheet" href="./node_modules/skeleton-css/css/skeleton.css">
+</head>
+<body ng-app="bing-speech-api-test">
+    <!-- App -->
+    <app></app>
+    <!-- Microsoft Speech SDK. This library is not published yet as a NPM package, so we need to reference it locally. -->
+    <script src="./public/vendor/speech.1.0.0.min.js"></script>
+    <!-- AngularJS -->
+    <script src="./node_modules/angular/angular.js"></script>
+    <script>
+        // The setter is commonly set in the 'scripts/app.js' document, but it is
+        // better that we do it here to avoid to reference a single-line document.
+        (function() { angular.module("bing-speech-api-test", []); })();
+    </script>
+    <script src="./public/scripts/components/app.js"></script>
+    <script src="./public/scripts/factories/microphone.js"></script>
+    <script src="./public/scripts/values/properties.js"></script>
+</body>
+</html>

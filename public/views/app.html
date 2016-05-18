@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+            <header>
+                <h1>Bing Speech API Test</h1>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="three columns">
+            <select class="u-full-width" ng-model="$ctrl.vm.selectedLocale" ng-change="$ctrl.onLocaleChange()">
+                <option ng-repeat="locale in $ctrl.vm.locales track by locale.id" value="{{ locale.id }}">{{ locale.name }}</option>
+            </select>
+        </div>
+        <div class="seven columns">
+            <button ng-click="$ctrl.toggleMicrophone()" class="button-primary">{{ $ctrl.vm.action }}</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            <table class="u-full-width" ng-show="$ctrl.vm.transcripts.length > 0">
+                <thead>
+                    <tr>
+                        <th>Transcript</th>
+                        <th>Confidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="transcript in $ctrl.vm.transcripts track by $index">
+                        <td>{{ transcript.transcript }}</td>
+                        <td>{{ transcript.confidence }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

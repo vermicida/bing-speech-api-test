@@ -1,0 +1,34 @@
+{
+  "name": "bing-speech-api-test",
+  "version": "0.0.1",
+  "description": "An example of Bing Speech API using the Microsoft Speech SDK.",
+  "author": "Diego Herrera",
+  "homepage": "https://github.com/vermicida/bing-speech-api-test#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermicida/bing-speech-api-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vermicida/bing-speech-api-test/issues"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "microsoft",
+    "bing",
+    "speech",
+    "spi",
+    "asr",
+    "recognition",
+    "voice"
+  ],
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "skeleton-css": "^2.0.4"
+  }
+}
